@@ -22,10 +22,10 @@ class _TextractServiceState extends State<TextractService> {
 
   Future<void> _performOCR(File imageFile) async {
     final textract = Textract(
-      region: 'us-east-1',
+      region: '',
       credentials: AwsClientCredentials(
-        accessKey: 'AKIA57VDLN2Q6CVNUKLS',
-        secretKey: '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',
+        accessKey: '',
+        secretKey: '',
       ),
     );
 
