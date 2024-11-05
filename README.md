@@ -2,6 +2,22 @@
 
 A new Flutter project.
 
+## Configure AWS SDK
+Set up the AWS SDK in your Flutter application:-
+
+import 'package:aws_sdk/aws_sdk.dart';
+
+final awsRegion = 'your-region'; // e.g., 'us-east-1'
+final awsAccessKey = 'your-access-key';
+final awsSecretKey = 'your-secret-key';
+
+final awsClient = AwsClient(
+  accessKey: awsAccessKey,
+  secretKey: awsSecretKey,
+  region: awsRegion,
+);
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
